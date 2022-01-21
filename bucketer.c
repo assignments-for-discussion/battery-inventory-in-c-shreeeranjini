@@ -13,7 +13,7 @@ struct CountsByUsage countBatteriesByUsage(const int* cycles, int nBatteries) {
 }
 
 void testBucketingByNumberOfCycles() {
-  const int chargeCycleCounts[] = {100, 300, 500, 600, 900, 1000};
+  const int chargeCycleCounts[] = {100, 300, 400, 500, 600,700,800, 900, 1000};
   const int numberOfBatteries = sizeof(chargeCycleCounts) / sizeof(chargeCycleCounts[0]);
   printf("Counting batteries by usage cycles...\n");
   struct CountsByUsage counts = countBatteriesByUsage(chargeCycleCounts, numberOfBatteries);
